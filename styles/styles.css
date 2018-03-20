@@ -279,7 +279,8 @@ body {
       padding-right: 0; }
   .content .wrapper {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin: 0; }
     .content .wrapper .news-wrapper {
       margin-right: 0; }
   .footer .wrapper {
