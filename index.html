@@ -49,7 +49,7 @@
         <div class="grid-container">
             <div class="grid-x ">
                 <div class="cell small-12 medium-6">
-                    <h2>Что важно при
+                    <h2>Что важно <br> при
                         <span class="word">выборе</span> подъёмника?</h2>
                     <div class="flex-container align-justify btn-types">
                         <button type="button" class="button large blue active" data-lift-type="0">2-х стоечный</button>
@@ -57,21 +57,42 @@
                         <button type="button" class="button large blue" data-lift-type="2">Ножничный</button>
                     </div>
                     <div class="flex-container align-justify btn-actions">
-                        <button type="button" class="button large yellow">Получить консультацию</button>
-                        <button type="button" class="button large yellow">Получить каталог</button>
+                        <button type="button" data-open="modalCons" class="button large yellow">Получить консультацию</button>
+                        <button type="button" class="button large yellow delay">Получить каталог</button>
                     </div>
                 </div>
                 <div class="cell small-12 medium-6 img-data">
                     <div class="points">
                     </div>
                     <img src="" alt="двухстоечный подъёмник" width="100%" height="100%" />
-                    <div class="reveal flex-container flex-dir-column align-stretch modal-info" id="imgInfo" data-reveal>
-                        <img src="" alt="часть" width="100%" />
-                        <div class="modal-info-header flex-container align-center-middle">Проверка</div>
-                        <div class="modal-info-text">Проверка</div>
-                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+    
+    <!-- точки -->
+    <div class="reveal flex-container flex-dir-column align-stretch modal-info" id="imgInfo" data-reveal>
+        <img src="" alt="часть" width="100%" />
+        <div class="modal-info-header flex-container align-center-middle">Проверка</div>
+        <div class="modal-info-text">Проверка</div>
+    </div>
+    
+    <!-- консультация -->
+    <div class="reveal modal-cons grid-y align-stretch" id="modalCons" data-reveal>
+        <div class="cell modal-cons-header flex-container align-center-middle">Заполните форму и мы вам перезвоним
+        </div>
+        <div class="cell">
+            <input type="text" placeholder="Ваше имя">
+        </div>
+        <div class="cell">
+            <input type="text" placeholder="Телефон">
+        </div>
+        <div class="cell">
+            <button type="button" class="button yellow">Отправить</button>
+        </div>
+        <div class="cell modal-cons-rules">
+            Нажимая на кнопку, вы даёте согласие на
+            <a href="#">обработку персональных данных</a>
         </div>
     </div>    <!-- ---
     test: Page Title
