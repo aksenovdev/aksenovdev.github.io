@@ -33,7 +33,7 @@
                         <li class="cell auto grid-x align-right align-middle">
                             <div class="cell small-12 medium-5 tel flex-container align-right">8-800-250-99-46</div>
                             <div class="cell small-12 medium-4 flex-container align-right">
-                                <button class="yellow button btn-call">
+                                <button class="yellow button btn-call" data-open="modalCons">
                                     <div class="flex-container align-middle align-center">
                                         <i class="mdi mdi-phone-in-talk mdi-24px icon-tel"></i>
                                         <span class="text">Позвонить</span>
@@ -44,6 +44,25 @@
                     </ul>
                 </div>
             </div>
+        </div>
+    </div>
+    
+    <!-- звонок -->
+    <div class="reveal modal-cons grid-y align-stretch" id="modalCall" data-reveal>
+        <div class="cell modal-cons-header flex-container align-center-middle">Заполните форму и мы вам перезвоним
+        </div>
+        <div class="cell">
+            <input type="text" placeholder="Ваше имя">
+        </div>
+        <div class="cell">
+            <input type="text" placeholder="Телефон">
+        </div>
+        <div class="cell">
+            <button type="button" class="button yellow">Отправить</button>
+        </div>
+        <div class="cell modal-cons-rules">
+            Нажимая на кнопку, вы даёте согласие на
+            <a href="#">обработку персональных данных</a>
         </div>
     </div>    <div class="first-block">
         <div class="grid-container">
