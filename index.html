@@ -58,7 +58,7 @@
                     </div>
                     <div class="flex-container align-justify btn-actions">
                         <button type="button" data-open="modalCons" class="button large yellow">Получить консультацию</button>
-                        <button type="button" class="button large yellow delay">Получить каталог</button>
+                        <button type="button" data-open="modalCatalog" class="button large yellow delay">Получить каталог</button>
                     </div>
                 </div>
                 <div class="cell small-12 medium-6 img-data">
@@ -79,6 +79,25 @@
     
     <!-- консультация -->
     <div class="reveal modal-cons grid-y align-stretch" id="modalCons" data-reveal>
+        <div class="cell modal-cons-header flex-container align-center-middle">Заполните форму и мы вам перезвоним
+        </div>
+        <div class="cell">
+            <input type="text" placeholder="Ваше имя">
+        </div>
+        <div class="cell">
+            <input type="text" placeholder="Телефон">
+        </div>
+        <div class="cell">
+            <button type="button" class="button yellow">Отправить</button>
+        </div>
+        <div class="cell modal-cons-rules">
+            Нажимая на кнопку, вы даёте согласие на
+            <a href="#">обработку персональных данных</a>
+        </div>
+    </div>
+    
+    <!-- каталог -->
+    <div class="reveal modal-cons grid-y align-stretch" id="modalCatalog" data-reveal>
         <div class="cell modal-cons-header flex-container align-center-middle">Заполните форму и мы вам перезвоним
         </div>
         <div class="cell">
