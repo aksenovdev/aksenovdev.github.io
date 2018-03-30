@@ -7,7 +7,9 @@
     <title>ЦТО</title>
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
   </head>
   <body>
     <div class="header">
@@ -144,6 +146,58 @@
         <div class="cell modal-cons-rules">
             Нажимая на кнопку, вы даёте согласие на
             <a href="#">обработку персональных данных</a>
+        </div>
+    </div>    <!--  -->
+    <div class="second-block" data-parallax="scroll" data-image-src="/assets/img/back-2.png">
+        <div class="grid-container">
+            <div class="grid-y">
+                <div class="cell">
+                    <h1 class="h1">Популярные модели подъёмников</h1>
+                </div>
+                <div class="cell grid-x btn-types">
+                    <div class="cell small-12 large-4 flex-center">
+                        <button type="button" class="button large blue active" data-lift-type="0">2-х стоечный</button>
+                    </div>
+                    <div class="cell small-12 large-4 flex-center">
+                        <button type="button" class="button large blue" data-lift-type="1">4-х стоечный</button>
+                    </div>
+                    <div class="cell small-12 large-4 flex-center">
+                        <button type="button" class="button large blue" data-lift-type="2">Ножничный</button>
+                    </div>
+                </div>
+                <div class="cell grid-y">
+                    <div class="grid-x shop">
+                        <div class="cell small-12 large-4 flex-center">
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="cell grid-x">
+                    <div class="cell small-12 large-4"></div>
+                    <div class="cell small-12 large-4 flex-center">
+                        <button type="button" class="button yellow btn-more">
+                            Получить полный каталог
+                            <br/>
+                            <i>(354) позиции</i>
+                        </button>
+                    </div>
+                    <div class="cell small-12 large-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="width: 100%; height: 500px; background-color: black">
+    
+    </div>
+    
+    <div id="liftCardTempl" style="display: none" class="lift-card">
+        <h2 class="h2"></h2>
+        <img src="" width="100%" />
+        <div class="price">
+            <i class="mdi mdi-currency-rub "></i>
+        </div>
+        <div class="flex-center">
+            <button class="button red char-btn" data-el-id="">Просмотреть характеристики</button>
         </div>
     </div>    
   </body>

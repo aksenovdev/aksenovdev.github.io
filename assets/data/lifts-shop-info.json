@@ -1,0 +1,100 @@
+[
+    {
+        "id": 0,
+        "title": "Norberg 4122A-4K 1",
+        "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
+        "price": 85321,
+        "type": 0 
+    },
+    {
+        "id": 1,
+        "title": "Norberg 4122A-4K 2",
+        "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
+        "price": 85321,
+        "type": 0 
+    },
+    {
+        "id": 2,
+        "title": "Norberg 4122A-4K 3",
+        "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
+        "price": 85321,
+        "type": 0 
+    },
+    {
+        "id": 3,
+        "title": "Norberg 4122A-4K 4",
+        "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
+        "price": 85321,
+        "type": 0 
+    },
+    {
+        "id": 4,
+        "title": "Norberg 4122A-4K 5",
+        "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
+        "price": 85321,
+        "type": 0 
+    },
+    {
+        "id": 5,
+        "title": "Norberg 4122A-4K 6",
+        "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
+        "price": 85321,
+        "type": 0 
+    },
+    {
+        "id": 6,
+        "title": "Norberg 4122A-4K 7",
+        "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
+        "price": 85321,
+        "type": 0 
+    },
+    {
+        "id": 7,
+        "title": "Norberg 4122A-4K 8",
+        "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
+        "price": 85321,
+        "type": 0 
+    },
+    {
+        "id": 8,
+        "title": "Norberg 4122A-4K 9",
+        "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
+        "price": 85321,
+        "type": 0 
+    },
+    {
+        "id": 9,
+        "title": "Norberg 4122A-4K 10",
+        "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
+        "price": 85321,
+        "type": 0 
+    },
+    {
+        "id": 10,
+        "title": "Norberg 4122A-4K 11",
+        "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
+        "price": 85321,
+        "type": 0 
+    },
+    {
+        "id": 11,
+        "title": "Norberg 4122A-4K 12",
+        "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
+        "price": 85321,
+        "type": 0 
+    },
+    {
+        "id": 12,
+        "title": "Norberg 4440J",
+        "imgSrc": "/assets/img/lifts/shop/Norberg4440J.png",
+        "price": 96527,
+        "type": 1
+    },
+    {
+        "id": 13,
+        "title": "Norberg 4122A-4T",
+        "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4T.png",
+        "price": 114831,
+        "type": 2        
+    }
+]
