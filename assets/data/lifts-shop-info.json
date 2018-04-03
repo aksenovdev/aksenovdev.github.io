@@ -1,97 +1,225 @@
 [
     {
         "id": 0,
+        "type": 0,
         "title": "Norberg 4122A-4K 1",
+        "fullTitle": "Подъёмник двухстоечный, г/п 4 тонны 4122A-4K",
+        "description": "Описание подъёмника 1",
         "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
         "price": 85321,
-        "type": 0 
+        "chars": [
+            {
+                "title": "Грузоподъёмность, кг",
+                "value": 4000
+            },
+            {
+                "title": "Высота подъёма, мм",
+                "value": 1930
+            },
+            {
+                "title": "Габаритная шина, мм",
+                "value": "3365 (без гидроагрегата)"
+            },
+            {
+                "title": "Высота стойки, мм",
+                "value": 2824
+            },
+            {
+                "title": "Время подъёма/опускания, сек",
+                "value": "50/25"
+            },
+            {
+                "title": "Расстояние между стойками, мм",
+                "value": 2780
+            },
+            {
+                "title": "Мощность электродвигателя, кВт",
+                "value": 2.2
+            },
+            {
+                "title": "Электропитание, В/Гц",
+                "value": "3ф.х380-400/50"
+            }
+        ]
     },
     {
         "id": 1,
+        "type": 0,
         "title": "Norberg 4122A-4K 2",
+        "fullTitle": "Подъёмник двухстоечный, г/п 4 тонны 4122A-4K",
+        "description": "Описание подъёмника 2",
         "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
         "price": 85321,
-        "type": 0 
-    },
-    {
+        "chars": [
+            {
+                "title": "1Грузоподъёмность, кг",
+                "value": 4000
+            },
+            {
+                "title": "1Высота подъёма, мм",
+                "value": 1930
+            },
+            {
+                "title": "Габаритная шина, мм",
+                "value": "3365 (без гидроагрегата)"
+            },
+            {
+                "title": "Высота стойки, мм",
+                "value": 2824
+            },
+            {
+                "title": "Время подъёма/опускания, сек",
+                "value": "50/25"
+            },
+            {
+                "title": "Расстояние между стойками, мм",
+                "value": 2780
+            },
+            {
+                "title": "Мощность электродвигателя, кВт",
+                "value": 2.2
+            },
+            {
+                "title": "Электропитание, В/Гц",
+                "value": "3ф.х380-400/50"
+            }
+        ]
+    },    {
         "id": 2,
+        "type": 0,
         "title": "Norberg 4122A-4K 3",
+        "fullTitle": "Подъёмник двухстоечный, г/п 4 тонны 4122A-4K",
+        "description": "Описание подъёмника 3",
         "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
         "price": 85321,
-        "type": 0 
-    },
-    {
+        "chars": [
+            {
+                "title": "2Грузоподъёмность, кг",
+                "value": 4000
+            },
+            {
+                "title": "2Высота подъёма, мм",
+                "value": 1930
+            },
+            {
+                "title": "Габаритная шина, мм",
+                "value": "3365 (без гидроагрегата)"
+            },
+            {
+                "title": "Высота стойки, мм",
+                "value": 2824
+            },
+            {
+                "title": "Время подъёма/опускания, сек",
+                "value": "50/25"
+            },
+            {
+                "title": "Расстояние между стойками, мм",
+                "value": 2780
+            },
+            {
+                "title": "Мощность электродвигателя, кВт",
+                "value": 2.2
+            },
+            {
+                "title": "Электропитание, В/Гц",
+                "value": "3ф.х380-400/50"
+            }
+        ]
+    },    {
         "id": 3,
+        "type": 0,
         "title": "Norberg 4122A-4K 4",
+        "fullTitle": "Подъёмник двухстоечный, г/п 4 тонны 4122A-4K",
+        "description": "Описание подъёмника 4",
         "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
         "price": 85321,
-        "type": 0 
-    },
-    {
+        "chars": [
+            {
+                "title": "3Грузоподъёмность, кг",
+                "value": 4000
+            },
+            {
+                "title": "3Высота подъёма, мм",
+                "value": 1930
+            },
+            {
+                "title": "Габаритная шина, мм",
+                "value": "3365 (без гидроагрегата)"
+            },
+            {
+                "title": "Высота стойки, мм",
+                "value": 2824
+            },
+            {
+                "title": "Время подъёма/опускания, сек",
+                "value": "50/25"
+            },
+            {
+                "title": "Расстояние между стойками, мм",
+                "value": 2780
+            },
+            {
+                "title": "Мощность электродвигателя, кВт",
+                "value": 2.2
+            },
+            {
+                "title": "Электропитание, В/Гц",
+                "value": "3ф.х380-400/50"
+            }
+        ]
+    },    {
         "id": 4,
+        "type": 0,
         "title": "Norberg 4122A-4K 5",
+        "fullTitle": "Подъёмник двухстоечный, г/п 4 тонны 4122A-4K",
+        "description": "Описание подъёмника 5",
         "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
         "price": 85321,
-        "type": 0 
+        "chars": [
+            {
+                "title": "5Грузоподъёмность, кг",
+                "value": 4000
+            },
+            {
+                "title": "5Высота подъёма, мм",
+                "value": 1930
+            },
+            {
+                "title": "Габаритная шина, мм",
+                "value": "3365 (без гидроагрегата)"
+            },
+            {
+                "title": "Высота стойки, мм",
+                "value": 2824
+            },
+            {
+                "title": "Время подъёма/опускания, сек",
+                "value": "50/25"
+            },
+            {
+                "title": "Расстояние между стойками, мм",
+                "value": 2780
+            },
+            {
+                "title": "Мощность электродвигателя, кВт",
+                "value": 2.2
+            },
+            {
+                "title": "Электропитание, В/Гц",
+                "value": "3ф.х380-400/50"
+            }
+        ]
     },
     {
         "id": 5,
-        "title": "Norberg 4122A-4K 6",
-        "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
-        "price": 85321,
-        "type": 0 
-    },
-    {
-        "id": 6,
-        "title": "Norberg 4122A-4K 7",
-        "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
-        "price": 85321,
-        "type": 0 
-    },
-    {
-        "id": 7,
-        "title": "Norberg 4122A-4K 8",
-        "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
-        "price": 85321,
-        "type": 0 
-    },
-    {
-        "id": 8,
-        "title": "Norberg 4122A-4K 9",
-        "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
-        "price": 85321,
-        "type": 0 
-    },
-    {
-        "id": 9,
-        "title": "Norberg 4122A-4K 10",
-        "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
-        "price": 85321,
-        "type": 0 
-    },
-    {
-        "id": 10,
-        "title": "Norberg 4122A-4K 11",
-        "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
-        "price": 85321,
-        "type": 0 
-    },
-    {
-        "id": 11,
-        "title": "Norberg 4122A-4K 12",
-        "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4K.png",
-        "price": 85321,
-        "type": 0 
-    },
-    {
-        "id": 12,
         "title": "Norberg 4440J",
         "imgSrc": "/assets/img/lifts/shop/Norberg4440J.png",
         "price": 96527,
         "type": 1
     },
     {
-        "id": 13,
+        "id": 6,
         "title": "Norberg 4122A-4T",
         "imgSrc": "/assets/img/lifts/shop/Norberg4122A-4T.png",
         "price": 114831,

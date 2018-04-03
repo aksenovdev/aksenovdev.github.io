@@ -7,9 +7,9 @@
     <title>ЦТО</title>
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/parallax.min.js"></script> -->
     <script src="assets/js/app.js"></script>
-    <script src="assets/js/parallax.min.js"></script>
   </head>
   <body>
     <div class="header">
@@ -36,7 +36,7 @@
                         <li class="cell auto grid-x align-right align-middle">
                             <div class="cell small-12 medium-5 tel flex-container align-right">8-800-250-99-46</div>
                             <div class="cell small-12 medium-4 flex-container align-right">
-                                <button class="yellow button btn-call" data-open="modalCons">
+                                <button class="yellow button btn-hover btn-call" data-open="modalCons">
                                     <div class="flex-container align-middle align-center">
                                         <i class="mdi mdi-phone-in-talk mdi-24px icon-tel"></i>
                                         <span class="text">Позвонить</span>
@@ -64,7 +64,7 @@
             <input type="text" placeholder="Телефон">
         </div>
         <div class="cell">
-            <button type="button" class="button yellow">Отправить</button>
+            <button type="button" class="button btn-hover yellow">Отправить</button>
         </div>
         <div class="cell modal-cons-rules">
             Нажимая на кнопку, вы даёте согласие на
@@ -119,7 +119,7 @@
             <input type="text" placeholder="Телефон">
         </div>
         <div class="cell">
-            <button type="button" class="button yellow">Отправить</button>
+            <button type="button" class="button btn-hover yellow">Отправить</button>
         </div>
         <div class="cell modal-cons-rules">
             Нажимая на кнопку, вы даёте согласие на
@@ -141,14 +141,13 @@
             <input type="text" placeholder="Телефон">
         </div>
         <div class="cell">
-            <button type="button" class="button yellow">Отправить</button>
+            <button type="button" class="button btn-hover yellow">Отправить</button>
         </div>
         <div class="cell modal-cons-rules">
             Нажимая на кнопку, вы даёте согласие на
             <a href="#">обработку персональных данных</a>
         </div>
-    </div>    <!--  -->
-    <div class="second-block" data-parallax="scroll" data-image-src="/assets/img/back-2.png">
+    </div>    <div class="second-block">
         <div class="grid-container">
             <div class="grid-y">
                 <div class="cell">
@@ -172,24 +171,48 @@
                         </div>
                     </div>
                 </div>
-                <div class="cell grid-x">
+                <div class="cell grid-x get-more-wrapper">
                     <div class="cell small-12 large-4"></div>
                     <div class="cell small-12 large-4 flex-center">
-                        <button type="button" class="button yellow btn-more">
+                        <button type="button" class="button btn-hover yellow btn-more">
+                            Смотреть ещё
+                        </button>
+                    </div>
+                    <div class="cell small-12 large-4"></div>
+                </div>
+                <div style="display: none" class="cell grid-x get-catalog-wrapper" data-abide novalidate>
+                    <div class="cell samll-12 title">
+                        Оставте своих контакты и получите полный каталог подъёмников
+                    </div>
+                    <div class="cell small-12 large-4 flex-center">
+                        <label>
+                            <input type="email" id="emailGC" name="emailGC" placeholder="Ваш email" required pattern="email"/>
+                            <div class="form-error">
+                                Введён неверный email
+                            </div>
+                        </label>
+                    </div>
+                    <div class="cell small-12 large-4 flex-center">
+                        <label>
+                            <input type="tel" id="phoneNumberGC" name="phoneNumberGC" placeholder="Ваш телефон" required pattern="number"/>
+                            <span class="form-error">
+                                Введён неверный номер телефона
+                            </span>
+                        </label>
+                    </div>
+                    <div class="cell small-12 large-4 flex-center">
+                        <button type="button" class="button btn-hover yellow" id="btnGetCatalog">
                             Получить полный каталог
                             <br/>
                             <i>(354) позиции</i>
                         </button>
                     </div>
-                    <div class="cell small-12 large-4"></div>
                 </div>
             </div>
         </div>
     </div>
-    <div style="width: 100%; height: 500px; background-color: black">
     
-    </div>
-    
+    <!-- шаблон для карточки подъёмника в магазине -->
     <div id="liftCardTempl" style="display: none" class="lift-card">
         <h2 class="h2"></h2>
         <img src="" width="100%" />
@@ -197,8 +220,209 @@
             <i class="mdi mdi-currency-rub "></i>
         </div>
         <div class="flex-center">
-            <button class="button red char-btn" data-el-id="">Просмотреть характеристики</button>
+            <button class="button red char-btn" data-open="modalChars" data-el-id="">Просмотреть характеристики</button>
         </div>
-    </div>    
+    </div>
+    
+    <!-- характеристики -->
+    <div class="reveal modal-chars" id="modalChars" data-animation-in="fade-in" data-animation-out="fade-out" data-reveal>
+        <button class="close-button modal-close-big flex-container align-center align-middle" data-close aria-label="Закрыть" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="grid-container">
+            <h2 class="h2">Подъёмник двухстоечный, г/п 4 тонны 4122A-4K</h2>
+            <div class="grid-x chars-wrapper">
+                <div class="cell small-12 large-6 flex-center">
+                    <img width="100%" height="100%" src="/assets/img/lifts/shop/Norberg4122A-4K.png" alt="">
+                </div>
+                <div class="cell small-12 large-6">
+                    <ul class="tabs" data-tabs id="charTabs">
+                        <li class="tabs-title is-active">
+                            <a href="#tabDescr" aria-selected="true">Описание</a>
+                        </li>
+                        <li class="tabs-title">
+                            <a href="#tabChar">Характеристики</a>
+                        </li>
+                    </ul>
+    
+                    <div class="tabs-content" data-tabs-content="charTabs">
+                        <div class="tabs-panel is-active" id="tabDescr">
+                            Описание
+                        </div>
+                        <div class="tabs-panel tab-char" id="tabChar">
+                            <div class="table-scroll">
+                                <table class="char-table">
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-x btn-wrapper ">
+            <div class="cell small-12 large-4 flex-center">
+                <button type="button" data-open="modalWhatImp" class="button btn-hover yellow large">
+                    Важно знать
+                </button>
+            </div>
+            <div class="cell small-12 large-4 flex-center">
+                <button type="button" data-open="modalInstall" class="button btn-hover yellow large">
+                    Купить в рассрочку
+                </button>
+            </div>
+            <div class="cell small-12 large-4 flex-center">
+                <button type="button" data-open="modalDisc" class="button btn-hover yellow large">
+                    Купить со скидкой
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- что важно при выборе подъёмника -->
+    <div class="reveal modal-what-imp modal-back modal-half" id="modalWhatImp" data-animation-in="fade-in" data-animation-out="fade-out"
+        data-reveal>
+        <button class="close-button modal-close-big flex-container align-center align-middle" data-close aria-label="Закрыть" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="bl-half flex-center magazine">
+            <img src="/assets/img/modals/magazine.png" />
+        </div>
+        <div class="bl-half flex-center info">
+            <div>
+                <h2 class="h2">
+                    При выборе подъемника вам важно знать следующее:
+                </h2>
+                <ul>
+                    <li>Требования к монтажу</li>
+                    <li>Типовые виды работ</li>
+                    <li>Как подготовить основание для подъёмника</li>
+                    <li>Какое дополнительное оборудование и комплектующие вам понадобятся </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- рассрочка -->
+    <div class="reveal modal-installment modal-back modal-half" id="modalInstall" data-animation-in="fade-in" data-animation-out="fade-out"
+        data-reveal>
+        <button class="close-button modal-close-big flex-container align-center align-middle" data-close aria-label="Закрыть" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="bl-half info">
+            <h2 class="h2">Почему расcрочка - это удобно</h2>
+            <p>
+                <b>Подъемник сейчас — деньги потом</b>
+                <br/> Не нужно долго накапливать средства на покупку — устройство можно получить уже сейчас! Не нужно экономить на
+                качестве товара или гарантийном обслуживании — вы можете позволить себе приобрести отличный аппарат, не рискуя
+                «выбросить деньги на ветер».
+            </p>
+            <p>
+                <b>Размер ежемесячных платежей не меняется</b>
+                <br/> Даже если цена товара в будущем повысится — для вас она останется неизменной.
+            </p>
+            <p>
+                <b>Отсутствие «скрытых» платежей</b>
+                <br/> Вся стоимость и размер ежемесячных платежей указаны у вас в договоре — вы точно знаете, сколько заплатите за
+                товар.
+            </p>
+            <p>
+                <b>Это быстро и просто</b>
+                <br/> Вам не нужно предоставлять никаких справок, поручительств, залогов, страховок — рассрочка оформляется по предъявлению
+                только документа, удостоверяющего личность, а вся процедура занимает не более 30 минут времени.
+            </p>
+        </div>
+        <div class="bl-half flex-center">
+            <div class="form" data-abide novalidate>
+                <div class="form-header">
+                    <h2 class="h2">Оставьте свои контакты</h2>
+                    и наши менеджеры дадут вам полную консультацию по покупке подъемника в рассрочку, а так же помогут подобрать соответствующий подъемник.
+                </div>
+                <label>
+                    <input type="text" id="nameInst" name="nameInst" placeholder="Ваше имя" required/>
+                    <div class="form-error">
+                        Введите имя
+                    </div>
+                </label>
+                <label>
+                    <input type="email" id="emailInst" name="emailInst" placeholder="Ваш email" required pattern="email"/>
+                    <div class="form-error">
+                        Введён неверный email
+                    </div>
+                </label>
+                <label>
+                    <input type="tel" id="phoneNumberInst" name="phoneNumberInst" placeholder="Ваш телефон" required pattern="number"/>
+                    <span class="form-error">
+                        Введён неверный номер телефона
+                    </span>
+                </label>
+                <button type="button" class="button yellow btn-hover" id="btnInst">
+                    Рассчёт рассрочки
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- скидка -->
+    <div class="reveal modal-installment modal-discount modal-back modal-half" id="modalDisc" data-animation-in="fade-in" data-animation-out="fade-out"
+        data-reveal>
+        <button class="close-button modal-close-big flex-container align-center align-middle" data-close aria-label="Закрыть" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="bl-half info">
+            <h2 class="h2">Индивидуальная скидка</h2>
+            <p>
+                <b>Подъемник сейчас — деньги потом</b>
+                <br/> Не нужно долго накапливать средства на покупку — устройство можно получить уже сейчас! Не нужно экономить на
+                качестве товара или гарантийном обслуживании — вы можете позволить себе приобрести отличный аппарат, не рискуя
+                «выбросить деньги на ветер».
+            </p>
+            <p>
+                <b>Размер ежемесячных платежей не меняется</b>
+                <br/> Даже если цена товара в будущем повысится — для вас она останется неизменной.
+            </p>
+            <p>
+                <b>Отсутствие «скрытых» платежей</b>
+                <br/> Вся стоимость и размер ежемесячных платежей указаны у вас в договоре — вы точно знаете, сколько заплатите за
+                товар.
+            </p>
+            <p>
+                <b>Это быстро и просто</b>
+                <br/> Вам не нужно предоставлять никаких справок, поручительств, залогов, страховок — рассрочка оформляется по предъявлению
+                только документа, удостоверяющего личность, а вся процедура занимает не более 30 минут времени.
+            </p>
+        </div>
+        <div class="bl-half flex-center">
+            <div class="form" data-abide novalidate>
+                <div class="form-header">
+                    <h2 class="h2">Оставьте свои контакты</h2>
+                    и наши менеджеры расскажут вам о возможности получения скидки, а так же помогут подобрать соответствующий подъемник.
+                </div>
+                <label>
+                    <input type="text" id="nameDisc" name="nameDisc" placeholder="Ваше имя" required/>
+                    <div class="form-error">
+                        Введите имя
+                    </div>
+                </label>
+                <label>
+                    <input type="email" id="emailDisc" name="emailDisc" placeholder="Ваш email" required pattern="email"/>
+                    <div class="form-error">
+                        Введён неверный email
+                    </div>
+                </label>
+                <label>
+                    <input type="tel" id="phoneNumberDisc" name="phoneNumberDisc" placeholder="Ваш телефон" required pattern="number"/>
+                    <span class="form-error">
+                        Введён неверный номер телефона
+                    </span>
+                </label>
+                <button type="button" class="button yellow btn-hover" id="btnDisc">
+                    Купить со скидкой
+                </button>
+            </div>
+        </div>
+    </div>
+    
   </body>
 </html>
