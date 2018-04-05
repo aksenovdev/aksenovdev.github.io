@@ -186,7 +186,7 @@
                     </div>
                     <div class="cell small-12 large-4 flex-center">
                         <label>
-                            <input type="email" id="emailGC" name="emailGC" placeholder="Ваш email" required pattern="email"/>
+                            <input type="email" id="emailGC" name="emailGC" placeholder="Ваш email" required pattern="email" />
                             <div class="form-error">
                                 Введён неверный email
                             </div>
@@ -194,7 +194,7 @@
                     </div>
                     <div class="cell small-12 large-4 flex-center">
                         <label>
-                            <input type="tel" id="phoneNumberGC" name="phoneNumberGC" placeholder="Ваш телефон" required pattern="number"/>
+                            <input type="tel" id="phoneNumberGC" name="phoneNumberGC" placeholder="Ваш телефон" required pattern="number" />
                             <span class="form-error">
                                 Введён неверный номер телефона
                             </span>
@@ -215,7 +215,7 @@
     <!-- шаблон для карточки подъёмника в магазине -->
     <div id="liftCardTempl" style="display: none" class="lift-card">
         <h2 class="h2"></h2>
-        <img src="" width="100%" />
+        <div class="img"></div>
         <div class="price">
             <i class="mdi mdi-currency-rub "></i>
         </div>
@@ -230,7 +230,7 @@
             <span aria-hidden="true">&times;</span>
         </button>
         <div class="grid-container">
-            <h2 class="h2">Подъёмник двухстоечный, г/п 4 тонны 4122A-4K</h2>
+            <h2 class="h2"></h2>
             <div class="grid-x chars-wrapper">
                 <div class="cell small-12 large-6 flex-center">
                     <img width="100%" height="100%" src="/assets/img/lifts/shop/Norberg4122A-4K.png" alt="">
@@ -286,6 +286,60 @@
         <button class="close-button modal-close-big flex-container align-center align-middle" data-close aria-label="Закрыть" type="button">
             <span aria-hidden="true">&times;</span>
         </button>
+        <div class="bl-half magazine flex-center">
+            <div class="magazine-header">
+                <h2 class="h2">Получите комерческое предложение</h2>
+                и узнайте, как правильно подобрать подъемник.
+            </div>
+            <div class="bl-abs flex-center">
+                <img src="/assets/img/modals/magazine.png" />
+            </div>        
+            <div class="bl-abs flex-center">
+                <div class="bl-circle yellow flex-center" data-open="modalWhatImp-2">
+                    <div class="yellow text-center">
+                        <i class="mdi mdi-menu"></i>
+                        <div class="open-info">Смотреть содержимое</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bl-half flex-center right">
+            <div class="form" data-abide novalidate>
+                <div class="form-header">
+                    <h2 class="h2">Оставьте заявку</h2>
+                    и узнайте, как правильно подобрать подъемник.
+                </div>
+                <label>
+                    <input type="text" id="nameGetInf" name="nameGetInf" placeholder="Ваше имя" required/>
+                    <div class="form-error">
+                        Введите имя
+                    </div>
+                </label>
+                <label>
+                    <input type="email" id="emailGetInf" name="emailGetInf" placeholder="Ваш email" required pattern="email" />
+                    <div class="form-error">
+                        Введён неверный email
+                    </div>
+                </label>
+                <label>
+                    <input type="tel" id="phoneNumberGetInf" name="phoneNumberGetInf" placeholder="Ваш телефон" required pattern="number" />
+                    <span class="form-error">
+                        Введён неверный номер телефона
+                    </span>
+                </label>
+                <button type="button" class="button yellow btn-hover" id="btnGetInf">
+                    Получить предложение
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- что важно при выборе подъёмника 2 -->
+    <div class="reveal modal-what-imp modal-back modal-half" id="modalWhatImp-2" data-animation-in="fade-in" data-animation-out="fade-out"
+        data-reveal>
+        <button class="close-button modal-close-big flex-container align-center align-middle" data-close aria-label="Закрыть" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
         <div class="bl-half flex-center magazine">
             <img src="/assets/img/modals/magazine.png" />
         </div>
@@ -300,9 +354,13 @@
                     <li>Как подготовить основание для подъёмника</li>
                     <li>Какое дополнительное оборудование и комплектующие вам понадобятся </li>
                 </ul>
+                <button type="button" data-open="modalWhatImp" class="button yellow btn-hover">
+                    Получить предложение
+                </button>
             </div>
         </div>
     </div>
+    
     
     <!-- рассрочка -->
     <div class="reveal modal-installment modal-back modal-half" id="modalInstall" data-animation-in="fade-in" data-animation-out="fade-out"
@@ -337,7 +395,8 @@
             <div class="form" data-abide novalidate>
                 <div class="form-header">
                     <h2 class="h2">Оставьте свои контакты</h2>
-                    и наши менеджеры дадут вам полную консультацию по покупке подъемника в рассрочку, а так же помогут подобрать соответствующий подъемник.
+                    и наши менеджеры дадут вам полную консультацию по покупке подъемника в рассрочку, а так же помогут подобрать соответствующий
+                    подъемник.
                 </div>
                 <label>
                     <input type="text" id="nameInst" name="nameInst" placeholder="Ваше имя" required/>
@@ -346,13 +405,13 @@
                     </div>
                 </label>
                 <label>
-                    <input type="email" id="emailInst" name="emailInst" placeholder="Ваш email" required pattern="email"/>
+                    <input type="email" id="emailInst" name="emailInst" placeholder="Ваш email" required pattern="email" />
                     <div class="form-error">
                         Введён неверный email
                     </div>
                 </label>
                 <label>
-                    <input type="tel" id="phoneNumberInst" name="phoneNumberInst" placeholder="Ваш телефон" required pattern="number"/>
+                    <input type="tel" id="phoneNumberInst" name="phoneNumberInst" placeholder="Ваш телефон" required pattern="number" />
                     <span class="form-error">
                         Введён неверный номер телефона
                     </span>
@@ -406,13 +465,13 @@
                     </div>
                 </label>
                 <label>
-                    <input type="email" id="emailDisc" name="emailDisc" placeholder="Ваш email" required pattern="email"/>
+                    <input type="email" id="emailDisc" name="emailDisc" placeholder="Ваш email" required pattern="email" />
                     <div class="form-error">
                         Введён неверный email
                     </div>
                 </label>
                 <label>
-                    <input type="tel" id="phoneNumberDisc" name="phoneNumberDisc" placeholder="Ваш телефон" required pattern="number"/>
+                    <input type="tel" id="phoneNumberDisc" name="phoneNumberDisc" placeholder="Ваш телефон" required pattern="number" />
                     <span class="form-error">
                         Введён неверный номер телефона
                     </span>
@@ -422,7 +481,6 @@
                 </button>
             </div>
         </div>
-    </div>
-    
+    </div>    
   </body>
 </html>
